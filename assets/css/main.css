@@ -40,6 +40,7 @@
 	}
 
 	table {
+    text-align: center;
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
@@ -953,9 +954,41 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    /*
 		background-color: #1cb495;
-		border-radius: 6px;
-		border: 0;
+    */
+    background-color: Transparent;
+		border-radius: 0px;
+		border: 1;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: 700;
+		height: 2.75em;
+		line-height: 2.75em;
+    /*
+		padding: 0 1.125em;
+    */
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	roundbutton {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    background-color: Transparent;
+		border-radius: 1px;
+		border: 1;
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
@@ -968,12 +1001,19 @@
 		white-space: nowrap;
 	}
 
+
+		input[type="submit"]:hover,
+
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #1fcaa7;
+			/*
+      background-color: #1fcaa7;
+       */
+      background-color: #d3d3d3;
 		}
 
 		input[type="submit"]:active,
@@ -981,7 +1021,10 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
+      /*
 			background-color: #199e83;
+      */
+      background-color: #d3d3d3;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -1003,7 +1046,7 @@
 			input[type="button"],
 			button,
 			.button {
-				padding: 0;
+				padding: 1px 0 1px "0;
 			}
 
 		}
@@ -1053,6 +1096,18 @@
 		display: flex;
 		position: relative;
 	}
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  :-moz-placeholder {
+    text-align: center;
+  }
+  ::-moz-placeholder {
+    text-align: center;
+  }
+  :-ms-input-placeholder {
+    text-align: center;
+  }
 
 		#signup-form input[type="text"],
 		#signup-form input[type="password"],

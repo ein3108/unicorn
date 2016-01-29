@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Map -->
-    <script src="assets/map/googleMapSearch.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCojkxEmZw9xNuJPjaR97T2s4J8_gU1W9U&callback=initialize"></script>
-
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>4 Col Portfolio - Start Bootstrap Template</title>
+    <title>Chefbox</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/4-col-portfolio.css" rel="stylesheet">
+    <link href="assets/css/4-col-portfolio.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,20 +21,21 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+  <style>
+    unli {
+      text-decoration: underline;
+    }
+    cc {
+      text-align: center;
+    }
+    rr {
+      text-align: right;
+    }
+    #map-container {
+      height: 500px;
+    }
+  </style>
 </head>
-<style>
-  unli {
-    text-decoration: underline;
-  }
-  cc {
-    text-align: center;
-  }
-  rr {
-    text-align: right;
-  }
-</style>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -58,7 +54,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="main.html">Home</a>
                     </li>
                     <li>
                         <a href="#">Log in</a>
@@ -89,7 +85,7 @@
         <div class="row">
             <div class="col-md-3 portfolio-item">
               <a href="#">
-                <img class="img-responsive" src="image/food1.jpg" alt="">
+                <img class="img-responsive" src="images/food1.jpg" alt="">
               </a>
             </div>
             <div class="col-lg-12">
@@ -118,43 +114,68 @@
         <!-- /.row -->
 
         <!-- Projects Row -->
+        <h2>Reviews<h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+              wonderful<p>Proin sit amet ipsum finibus, eleifend purus sit amet, elementum augue. Proin non pulvinar nisi, nec aliquet enim. Fusce non diam ac orci efficitur fringilla tristique nec ex. Donec venenatis dictum nisi eu interdum. Maecenas elementum semper ante eget cursus. Sed a fringilla quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc molestie elit eu est ullamcorper aliquam. Aenean tincidunt dolor sit amet ultricies semper.</p>
+            </div>
+            <div class="col-md-3 portfolio-item">
+              delightful
+              <p>
+              Cras eget tellus orci. Suspendisse eget lacinia erat. Proin vitae tristique risus. Curabitur suscipit, lectus nec ultrices luctus, purus neque tincidunt est, vel feugiat diam tellus feugiat felis. Fusce placerat dictum pulvinar. Morbi luctus venenatis volutpat. Nullam tincidunt malesuada urna vel convallis. Pellentesque venenatis in risus id blandit. Etiam accumsan, metus in tristique faucibus, nisl sem venenatis eros, in ultrices justo sapien sit amet
+              sapien. Aenean ac elit leo.
+              </p>
+            </div>
+            <div class="col-md-3 portfolio-item">
+              great
+              <p>
+              Donec viverra urna sed est sodales convallis. Phasellus feugiat metus eu magna feugiat facilisis. Fusce cursus leo nisl, vel congue urna posuere a. Nullam velit erat, tempus vitae auctor et, semper sed eros. Sed suscipit feugiat eleifend. Morbi et lobortis magna. Fusce in euismod lectus. Morbi erat felis, semper in leo vitae, scelerisque bibendum nisi. Mauris ullamcorper egestas ornare. Nulla dapibus dictum nibh id porta.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--
         <div class="row">
             <div class="col-md-3 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="image/food2.jpg" alt="">
+                    <img class="img-responsive" src="images/food2.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-3 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="image/food3.jpg" alt="">
+                    <img class="img-responsive" src="images/food3.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-3 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="image/food4.jpg" alt="">
+                    <img class="img-responsive" src="images/food4.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-3 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="image/food5.jpg" alt="">
+                    <img class="img-responsive" src="images/food5.jpg" alt="">
                 </a>
             </div>
         </div>
+        -->
         <!-- /.row -->
 
         <!-- Projects Row -->
+        <!--
         <div class="row">
             <div class="col-md-3 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="image/food6.jpg" alt="">
+                    <img class="img-responsive" src="images/food6.jpg" alt="">
                 </a>
             </div>
             <div class="col-md-3 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="image/food7.jpg" alt="">
+                    <img class="img-responsive" src="images/food7.jpg" alt="">
                 </a>
             </div>
         </div>
+        -->
         <!-- /.row -->
 
         <!-- Pagination -->
@@ -192,29 +213,37 @@
 
         <hr>
 
-        <div id="map"></div>
+        <div id="map-container" class="col-md-6"></div>
+        <script>
+          var map;
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map-container'), {
+              center: {lat: -34.397, lng: 150.644},
+              zoom: 8
+            });
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCojkxEmZw9xNuJPjaR97T2s4J8_gU1W9U&callback=initMap" async defer></script>
 
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Chefbox 2016. All rights reserved. </p>
-                </div>
-            </div>
-            <!-- /.row -->
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>Copyright &copy; Chefbox 2016. All rights reserved. </p>
+              </div>
+          </div>
         </footer>
-
-    </div>
+      </div>
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- Google Map -->
-    <script src="map/googleMapSearch.js"></script>
+    <script src="assets/js/map/googleMapSearch.js"></script>
 
 </body>
 
