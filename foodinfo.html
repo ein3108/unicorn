@@ -10,10 +10,11 @@
     <title>Chefbox</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link href="assets/css/4-col-portfolio.css" rel="stylesheet">
+    <link href="assets/css/4-col-portfolio.css" rel="stylesheet" />
+    <link href="assets/css/main.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -99,39 +100,76 @@
                 <p align:"center">
                   Ingredients: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pulvinar ex ac aliquet suscipit. In tempor tortor vel nisl ornare fermentum. Duis condimentum fermentum dui eget molestie. Phasellus enim urna, dignissim sit amet consectetur in, luctus eu est.
                 </p>
-                  <br>
-                  <unli><cc><b>568 cals</b></cc></unli>
-                  <br>
-                  <unli><b>#pescatorian</b></unli> 
-                </p>
-                <p>
-                  <unli>10 available</unli>
-                </p>
-                <a href="#" class="btn btn-default" role="button" align="center">order</a>
-                <p><br></p>
             </div>
         </div>
         <!-- /.row -->
-
+        <div class="row" style="text-align: center;">
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align: center;">
+                  Calories
+                </th>
+                <th style="text-align: center;">
+                  Type
+                </th>
+                <th style="text-align: center;">
+                Ingredients
+                </th>
+              </tr>
+            </thead>
+            <hr>
+            <tbody>
+              <tr>
+                <td>
+                  568
+                </td>
+                <td>
+                  pescatorian
+                </td>
+                <td>
+                  Anchobies, Tofu, Brown rice, Miso, Seaweed, Carrots, Napa cabbage, Sesame seeds, Kimchi, Red pepper powder
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+        </div>
+        <div class="row" style="text-align: center;">
+          <a href="#" class="btn btn-default">Instant order</a>
+        </div>
+        <div class="row"><br><br><br></div>
         <!-- Projects Row -->
-        <h2>Reviews<h2>
-        <hr>
+        <div class="row" style="text-align: center;"><b>3 Reviews</b></div>
+        <br>
+        <div class="row">
+          <form id="review-search" method="post" action="#">
+            <input type="text" id="review" class="form-control" placeholder="search reviews" />
+          </form>
+        </div>
+        <div class="row"><hr></div>
         <div class="row">
             <div class="col-md-3 portfolio-item">
-              wonderful<p>Proin sit amet ipsum finibus, eleifend purus sit amet, elementum augue. Proin non pulvinar nisi, nec aliquet enim. Fusce non diam ac orci efficitur fringilla tristique nec ex. Donec venenatis dictum nisi eu interdum. Maecenas elementum semper ante eget cursus. Sed a fringilla quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc molestie elit eu est ullamcorper aliquam. Aenean tincidunt dolor sit amet ultricies semper.</p>
+              <b>
+              wonderfuli 5.0/5.0<p>Proin sit amet ipsum finibus, eleifend purus sit amet, elementum augue. Proin non pulvinar nisi, nec aliquet enim. Fusce non diam ac orci efficitur fringilla tristique nec ex. Donec venenatis dictum nisi eu interdum. Maecenas elementum semper ante eget cursus. Sed a fringilla quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc molestie elit eu est ullamcorper aliquam. Aenean tincidunt dolor sit amet ultricies semper.</p>
+            </b>
             </div>
             <div class="col-md-3 portfolio-item">
-              delightful
+              <b>
+              delightful 4.5/5.0
               <p>
               Cras eget tellus orci. Suspendisse eget lacinia erat. Proin vitae tristique risus. Curabitur suscipit, lectus nec ultrices luctus, purus neque tincidunt est, vel feugiat diam tellus feugiat felis. Fusce placerat dictum pulvinar. Morbi luctus venenatis volutpat. Nullam tincidunt malesuada urna vel convallis. Pellentesque venenatis in risus id blandit. Etiam accumsan, metus in tristique faucibus, nisl sem venenatis eros, in ultrices justo sapien sit amet
               sapien. Aenean ac elit leo.
               </p>
+            </b>
             </div>
             <div class="col-md-3 portfolio-item">
-              great
+              <b>
+              great 4.5/5.0
               <p>
               Donec viverra urna sed est sodales convallis. Phasellus feugiat metus eu magna feugiat facilisis. Fusce cursus leo nisl, vel congue urna posuere a. Nullam velit erat, tempus vitae auctor et, semper sed eros. Sed suscipit feugiat eleifend. Morbi et lobortis magna. Fusce in euismod lectus. Morbi erat felis, semper in leo vitae, scelerisque bibendum nisi. Mauris ullamcorper egestas ornare. Nulla dapibus dictum nibh id porta.
               </p>
+              </b>
             </div>
           </div>
         </div>
