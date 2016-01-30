@@ -9,8 +9,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/boostrap.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/boostrap.min.css" />
     <link rel="stylesheet" href="assets/css/4-col-portfolio.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -22,33 +21,36 @@
     <!--
       <button type="button" class="btn btn-default" style="padding-left: -1px; padding-right: -1px;">Be a chef!</button>
       -->
-      <button type="button" class="btn btn-default">Be a chef!</button>
-      |
-      <a href="#">Sign up</a>
-      |
-      <a href="#">Login</a>
+      <!-- Navigation -->
+      <button type="button" onclick="becomeachef()" class="btn btn-default" id="becomeachef">Become a chef</button>
+      &nbsp;<a href="help.html">Help</pre></a>&nbsp;
+      &nbsp;<a href="signup.html">Sign Up</pre></a>&nbsp;
+      &nbsp;<a href="login.html">Log In</a>&nbsp;
     </p>
 		<!-- Header -->
     <header id="header">
-      <h1>Chef Box</h1>
-      <p>Enjoy the diverse food and constellation of chefs around you.</p>
+      <h1>Chefbox</h1>
+      <p>Enjoy the diverse food offered by a constellation of chefs around you!</p>
+      <br>
     </header>
 
     <!-- Search Field -->
     <section>
       <table>
+        <thead>
+        </thead>
         <tbody>
         <tr>
           <form id="food-search" method="post" action="#">
-            <input type="text" id="keyword" class="form-control" style="width: 100%;" placeholder="What do you feel like eating today?" />
+            <input type="text" id="keyword" placeholder="What do you feel like eating today?" />
+
           </form>
-        </tr>
-        <tr>
-          <a href="foodinfo.html">search</a>
+          <br>
+          <a href="foodinfo.html"><img src="images/magnifying-glass32.png" alt="none"/></a>
         </tr>
         </tbody>
       </table>
-  </section>
+    </section>
       <!--
       <h1>
         asdf
@@ -72,26 +74,6 @@
         </table>
       </h1>
       -->
-      <!--
-    <h2>
-    <table>
-      <tbody>
-      <tr>
-        <td>
-          <form id="search-food-text">
-            <input type="text" name="keyword" id="keyword" placeholder="Enter Search" />
-          </form>
-        </td>
-        <td>
-          <form id="search-food-btn" method="post" action="#">
-            <input type="submit" value="Search" />
-          </form>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-  </h2>
-  -->
     <!--
     <form id="search-food" method="post" action="#">
       <table>
@@ -173,22 +155,37 @@
     </header>
     -->
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; CSE 170</li>
-				</ul>
-			</footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="btm-header">
+      <!-- Footer -->
+      <footer id="footer">
+        <hr>
+        <p>
+        Join Us On
+        </p>
+        <ul class="icons">
+          <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+          <li><a href="mailto:hyk149@eng.ucsd.edu" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+        <ul class="copyright">
+          <li>&copy; Chefbox</li>
+        </ul>
+      </footer>
+    </div>
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
+    <!-- Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script>
+    function becomeachef() {
+      window.location.href ="becomeachef.html"
+    }
+    </script>
 	</body>
 </html>
