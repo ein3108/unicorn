@@ -1,71 +1,15 @@
-body{
-    /*padding: 20px;*/
-    text-align: center;
+.menu {
+	margin-right: 50em;
+	margin-top: 5em;
+	background-color: blue;
 }
 
-.jumbotron {
-    padding: 0;
+.menu li{
+	/*margin-left: 50em;*/
+	display: inline-block;
+	background-color: orange;
 }
 
-.jumbotron h1{
-    margin-top: 2em;
-    font-size: 200%;
+.table a:hover {
+   border: 1px solid yellow;
 }
-.jumbotron #sign-in{
-    position: fixed;
-    display: inline-block;
-    left: 80em;
-}
-.jumbotron #sign-up{
-    position: fixed;
-    display: inline-block;
-    left: 90em;
-}
-
-.searchbar {
-    display: inline-block;
-    margin-right: 5em;
-    margin-top: 2em;
-}
-.searchbar #search{
-    color: #00ffcc;
-    display: inline-block;
-}
-
-.menu  {
-    margin-right: 50em;
-    background-color: #101010;
-}
-
-li{
-    display: inline-block;
-    font-size: 30px;
-    border-right: 1px solid #bbbbbb;
-}
-
-.menu a{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.menu a:hover{
-    background-color: grey;
-}
-
-.table{
-    position: static;
-    font-size: 20px;
-}
-
-.table a{
-    cursor: pointer;
-}
-
-.table a:hover{
-    border: 1px solid yellow;
-}
-
-#active{
-    background-color: lightgrey;
-}
-

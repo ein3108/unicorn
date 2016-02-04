@@ -1,3 +1,8 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
 /*
 	Eventually by HTML5 UP
 	html5up.net | @n33co
@@ -13,7 +18,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #fff;
+		color: _palette(fg-bold);
 	}
 
 /* Form */
@@ -23,5 +28,5 @@
 	input[type="email"],
 	select,
 	textarea {
-		border: solid 2px #fff;
+		border: solid _size(border-width) _palette(fg-bold);
 	}
